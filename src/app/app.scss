@@ -1,0 +1,108 @@
+// http://ionicframework.com/docs/theming/
+
+
+// App Global Sass
+// --------------------------------------------------
+// Put style rules here that you want to apply globally. These
+// styles are for the entire app and not just one component.
+// Additionally, this file can be also used as an entry point
+// to import other Sass files to be included in the output CSS.
+//
+// Shared Sass variables, which can be used to adjust Ionic's
+// default Sass variables, belong in "theme/variables.scss".
+//
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.
+
+.app-header {
+  box-shadow: 0 3px 5px -1px rgba(0,0,0,.2), 0 6px 10px 0 rgba(0,0,0,.14), 0 1px 18px 0 rgba(0,0,0,.12);
+}
+
+.logo_color_1 {
+    color: rgb(205, 205, 206)
+  }
+  .mdc-toolbar__title {
+    color: white !important;    
+    font-family: Roboto,sans-serif;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-size:18px;
+    font-weight: 500;
+    letter-spacing: .02em;
+    line-height: 24px;
+    margin: 0;
+  }
+  .logo_color_2 {
+    color: #00B8D4
+  }
+  .toolbar-spacer {
+    flex: 1 1 auto !important;
+  }
+  .container-page{
+      margin-top: 44px
+  }
+  .user-icon{
+    width:24px;
+    height:24px;
+    line-height:1.5;
+    color: white;
+  }
+  .footer-txt {
+    text-align: left;
+    font-size:12px;
+    font-weight:400;
+  }
+
+  .menu-inner .content {
+    color: #fff;
+    background-color: #4f5b62;
+  }
+
+
+  /*** ios platform ***/
+  .menu-inner .item-ios {
+    color: #fff;
+    background-color: #4f5b62;
+  }
+  .menu-inner .list-ios .item-block .item-inner {
+    border-bottom: 0.55px solid #444444;
+  }
+  .menu-inner .list-ios > .item-block:first-child {
+    border-top: 0.55px solid #4f5b62;
+  }
+  .menu-inner .list-ios > .item-block:last-child, 
+  .list-ios > .item-wrapper:last-child .item-block {
+    border-bottom: 0.55px solid #4f5b62;
+  }
+  /*** chrome platform ***/
+  .menu-inner .item-md {
+    color: #fff;
+    background-color: #4f5b62;
+  }
+  .menu-inner .list-md .item-block .item-inner {
+    border-bottom: 0.55px solid #444444;
+  }
+  .menu-inner .list-md > .item-block:first-child {
+    border-top: 0.55px solid #4f5b62;
+  }
+  .menu-inner .list-md > .item-block:last-child, 
+  .list-md > .item-wrapper:last-child .item-block {
+    border-bottom: 0.55px solid #4f5b62;
+  }
+  /*** windows platform ***/
+  .menu-inner .item-wp {
+    color: #fff;
+    background-color: #4f5b62;
+  }
+  .menu-inner .list-wp .item-block .item-inner {
+    border-bottom: 0.55px solid #444444;
+  }
+  .menu-inner .list-wp > .item-block:first-child {
+    border-top: 0.55px solid #4f5b62;
+  }
+  .menu-inner .list-wp > .item-block:last-child, 
+  .list-wp > .item-wrapper:last-child .item-block {
+    border-bottom: 0.55px solid #4f5b62;
+  }
+  

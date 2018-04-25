@@ -1,0 +1,51 @@
+page-home {
+
+}
+.mat-header-row {
+  position: fixed;
+  z-index: 2;
+  width: calc(80%-24px);
+  min-width: 300px;
+  margin-top: -56px;
+  background-color: #56b2d6;
+  box-shadow: 0 3px 5px 0px #ccc;
+}
+
+.mat-header-cell {
+  color: #fff
+}
+
+.mat-table {
+  margin: 0 auto;
+  overflow: auto;
+  height: 100%;
+  padding-top: 56px;
+}
+
+.example-container {
+  width: 80%;
+  margin: 0 auto;
+  min-width: 300px;
+}
+
+.loading-indicator {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transform: -webkit-translate(-50%, -50%);
+  transform: -moz-translate(-50%, -50%);
+  transform: -ms-translate(-50%, -50%);
+  color: darkred;
+}
+.scroll-content {
+  overflow-y:hidden
+}
+@media (max-width: 321px){
+  .mat-header-row {
+    min-width: 280px;
+  }
+  .example-container {
+    min-width: 280px;
+  }
+}

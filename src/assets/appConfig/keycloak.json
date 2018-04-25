@@ -1,0 +1,9 @@
+{
+  "realm": "Intertek",
+  "url": "https://tenants.intigna.io/auth",
+  "ssl-required": "external",
+  "clientId": "trutesta",
+  "public-client": true,
+  "confidential-port": 0,
+  "logoutUrl":"/trutesta-mobile-forecast-ui"
+}

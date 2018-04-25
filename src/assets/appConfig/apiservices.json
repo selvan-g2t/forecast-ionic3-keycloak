@@ -1,0 +1,9 @@
+{
+    "constants": {
+        "userEmailId": "robyn.hills@sematree.com",
+        "resourceEndPoint": " https://devops2.intigna.io/dc-resource-mgmt-service/resources/",
+        "apiEndPoint": "https://trutesta.com/trutesta-trade-asn-services/associations/",
+        "schedulesEndpoint": "https://devops2.intigna.io/dc-schedule-service/schedules/",
+        "applicaitonId": "8c55a16f-9d69-438b-a29c-d8267227f427"
+    }
+}

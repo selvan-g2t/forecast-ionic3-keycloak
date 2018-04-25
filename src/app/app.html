@@ -1,0 +1,43 @@
+<ion-menu [content]="content" type="overlay" >
+    
+    <ion-content>
+      <ion-list>
+        <button menuClose ion-item >
+          <ion-icon name="stats"></ion-icon>
+          &nbsp;&nbsp;Forecasts
+        </button>
+        <button menuClose ion-item >
+          <ion-icon name="md-cog"></ion-icon>
+          &nbsp;&nbsp;Preferences
+        </button>
+        <button menuClose ion-item >
+          <ion-icon name="md-exit"></ion-icon>
+          &nbsp;&nbsp;Logout
+        </button>
+      </ion-list>
+    </ion-content>
+  
+  </ion-menu>
+
+  <ion-header class="app-header">
+    <ion-navbar color="header-nav">
+      <button ion-button menuToggle>
+        <ion-icon name="menu"></ion-icon>
+      </button>
+      <span class="mdc-toolbar__title">
+        <span class="logo_color_1">Tru</span><span class="logo_color_2">Scheduling</span>
+        <small>&trade;</small>
+      </span>
+      <span class="toolbar-spacer"></span>
+      <ion-icon name="md-person" class="user-icon" float-right></ion-icon>
+    </ion-navbar>
+  </ion-header>
+  
+  <!-- Disable swipe-to-go-back because it's poor UX to combine STGB with side menus -->
+  <ion-nav [root]="rootPage" #content swipeBackEnabled="false" class="container-page"></ion-nav>
+
+  <ion-footer class="app-footer">
+    <ion-toolbar color="header-nav">
+      <ion-title><span class="footer-txt">TruTesta&reg;</span></ion-title>
+    </ion-toolbar>
+  </ion-footer>

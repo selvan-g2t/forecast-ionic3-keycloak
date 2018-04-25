@@ -1,0 +1,292 @@
+// Ionic Variables and Theming. For more info, please see:
+// http://ionicframework.com/docs/theming/
+@import '../assets/css/prebuilt-themes/deeppurple-amber.css';
+
+// Font path is used to include ionicons,
+// roboto, and noto sans fonts
+$font-path: "../assets/fonts";
+
+
+// The app direction is used to include
+// rtl styles in your app. For more info, please see:
+// http://ionicframework.com/docs/theming/rtl-support/
+$app-direction: ltr;
+
+
+@import "ionic.globals";
+
+
+// Shared Variables
+// --------------------------------------------------
+// To customize the look and feel of this app, you can override
+// the Sass variables found in Ionic's source scss files.
+// To view all the possible Ionic variables, see:
+// http://ionicframework.com/docs/theming/overriding-ionic-variables/
+
+
+
+
+// Named Color Variables
+// --------------------------------------------------
+// Named colors makes it easy to reuse colors on various components.
+// It's highly recommended to change the default colors
+// to match your app's branding. Ionic uses a Sass map of
+// colors so you can add, rename and remove colors as needed.
+// The "primary" color is the only required color in the map.
+
+$colors: (
+  primary:    #00B8D4,
+  secondary:  #cccccc,
+  danger:     #ff3535,
+  light:      #fafafa,
+  dark:       #242424,
+  trutesta: (
+    base: #00B8D4,
+    contrast: #ffffff
+  ),
+  header-nav: (
+    base: #263238,
+    contrast: #ffffff
+  )
+);
+
+
+// App iOS Variables
+// --------------------------------------------------
+// iOS only Sass variables can go here
+
+$toolbar-height:44px;
+$menu-ios-background : #4f5b62;
+$toolbar-md-height:$toolbar-height;
+$toolbar-wp-height:$toolbar-height;
+$toolbar-ios-height:$toolbar-height;
+ion-menu {
+  left: 0;
+  right: 0;
+  top: $toolbar-height !important;
+  bottom: $toolbar-height !important;
+}
+
+// App Material Design Variables
+// --------------------------------------------------
+// Material Design only Sass variables can go here
+
+
+
+
+// App Windows Variables
+// --------------------------------------------------
+// Windows only Sass variables can go here
+
+
+
+
+// App Theme
+// --------------------------------------------------
+// Ionic apps can have different themes applied, which can
+// then be future customized. This import comes last
+// so that the above variables are used and Ionic's
+// default are overridden.
+
+@import "ionic.theme.default";
+
+
+// Ionicons
+// --------------------------------------------------
+// The premium icon font for Ionic. For more info, please see:
+// http://ionicframework.com/docs/ionicons/
+
+@import "ionic.ionicons";
+
+
+// Fonts
+// --------------------------------------------------
+
+@import "roboto";
+@import "noto-sans";
+
+body {
+  font:normal 14px/18px 'Lato',sans-serif;
+  margin:0;
+  padding:0;
+  height:100%
+}
+h2 {
+margin:20px 20px 10px 20px;
+}
+.mat-drawer-backdrop.mat-drawer-shown {
+background-color:rgba(0,0,0,.2)
+}
+.mat-horizontal-content-container {
+overflow: hidden;
+padding: 0 !important;
+}
+.mat-horizontal-stepper-header {
+height: 52px;
+}
+.mat-stepper-horizontal, .mat-stepper-vertical {
+background-color: #fafafa !important;
+color: rgba(0, 0, 0, 0.87);
+}
+mat-card-header {
+width: auto;
+margin: -24px -24px 15px !important;
+padding: 0 10px;
+/* border-bottom: 3px double #ededed; */
+background-color: #00B8D4;
+color: #fff;
+}
+mat-card-content {
+text-align:left !important;
+margin-bottom:7px;
+}
+.mat-card-actions .mat-raised-button:first-child {
+margin-left: 4px;
+margin-right: 4px;
+}
+@media (max-width: 599px){
+mat-card-header {
+    margin: -24px -16px 15px !important;
+}
+}
+
+
+
+/*** Begin Theme from material color export ***/
+.mdc-component__buttons .mdc-component__containers__primary .mdc-button,
+.mdc-component__buttons .mdc-component__containers__primary .mdc-fab {
+  background-color: #263238;
+  color: #ffffff;
+}
+.mdc-component__buttons .mdc-component__containers__primary .mdc-button--plain,
+.mdc-component__buttons .mdc-component__containers__primary .mdc-fab--plain {
+  background-color: transparent;
+  color: #263238;
+}
+.mdc-component__buttons .mdc-component__containers__secondary .mdc-button,
+.mdc-component__buttons .mdc-component__containers__secondary .mdc-fab {
+  background-color: #efefef;
+  color: #000000;
+  box-shadow: inset 0 0 3px #ccc;
+}
+.mdc-component__buttons .mdc-component__containers__secondary .mdc-button--plain,
+.mdc-component__buttons .mdc-component__containers__secondary .mdc-fab--plain {
+  background-color: transparent;
+  color: #cccccc;
+}
+.mdc-component__buttons .mdc-component__containers__primary .mdc-button--raised.mdc-ripple-upgraded::before,
+.mdc-component__buttons .mdc-component__containers__primary .mdc-button--raised.mdc-ripple-upgraded::after {
+  background-color: rgba(255, 255, 255, 0.06);
+}
+.mdc-component__buttons .mdc-component__containers__primary .mdc-button--plain.mdc-ripple-upgraded::before,
+.mdc-component__buttons .mdc-component__containers__primary .mdc-button--plain.mdc-ripple-upgraded::after {
+  background-color: rgba(38, 50, 56, 0.06);
+}
+.mdc-component__buttons .mdc-component__containers__primary .mdc-fab.mdc-ripple-upgraded::after {
+  background-color: rgba(255, 255, 255, 0.16);
+}
+.mdc-component__buttons .mdc-component__containers__primary .mdc-fab--plain.mdc-ripple-upgraded::after {
+  background-color: rgba(38, 50, 56, 0.16);
+}
+.mdc-component__buttons .mdc-component__containers__secondary .mdc-button--raised.mdc-ripple-upgraded::before,
+.mdc-component__buttons .mdc-component__containers__secondary .mdc-button--raised.mdc-ripple-upgraded::after {
+  background-color: rgba(0, 0, 0, 0.06);
+}
+.mdc-component__buttons .mdc-component__containers__secondary .mdc-button--plain.mdc-ripple-upgraded::before,
+.mdc-component__buttons .mdc-component__containers__secondary .mdc-button--plain.mdc-ripple-upgraded::after {
+  background-color: rgba(100, 181, 246, 0.06);
+}
+.mdc-component__buttons .mdc-component__containers__secondary .mdc-fab.mdc-ripple-upgraded::after {
+  background-color: rgba(0, 0, 0, 0.16);
+}
+.mdc-component__buttons .mdc-component__containers__secondary .mdc-fab--plain.mdc-ripple-upgraded::after {
+  background-color: rgba(100, 181, 246, 0.16);
+}
+.mdc-component__toolbar .app-bar {
+  background-color: #000a12;
+  display: block;
+  height: 20px;
+  width: 100%;
+}
+.mdc-component__toolbar .mdc-toolbar {
+  height: 56px;
+  padding: 16px;
+  flex-direction: row;
+  align-items: center;
+}
+.mdc-component__toolbar .mdc-toolbar__section {
+  align-items: center;
+}
+.mdc-component__toolbar .mdc-toolbar__title {
+  padding-left: 8px;
+}
+.mdc-component__toolbar .material-icons {
+  color: #ffffff;
+}
+.mdc-component__toolbar .material-image {
+  position: relative;
+  top: -64px;
+}
+.mdc-component__toolbar main {
+  background-color: white;
+  height: calc(100% - 48px);
+}
+.mdc-component__toolbar .cover-image__frame {
+  display: block;
+  height: 220px;
+  position: relative;
+  width: 100%;
+}
+.mdc-component__toolbar .cover-image {
+  display: block;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+.mdc-component__toolbar .mdc-fab {
+  position: absolute;
+  bottom: -25px;
+  right: 28px;
+}
+.mdc-component__toolbar .content {
+  font-size: 13px;
+  line-height: 20px;
+  padding: 50px 35px;
+}
+.mdc-component__toolbar .mdc--theme-primary {
+  background-color: #263238;
+  color: #ffffff;
+}
+.mdc-component__toolbar .mdc--theme-secondary {
+  background-color: #64B5F6;
+  color: #000000;
+}
+.mdc-component__toolbar .material-image .material-image__background {
+  fill: #2286c3;
+}
+.mdc-component__toolbar .material-image .material-image--shape-circle,
+.mdc-component__toolbar .material-image .material-image--shape-triangle {
+  fill: #9be7ff;
+}
+.mdc-component__toolbar .material-image .material-image--shape-intersection {
+  fill: #2286c3;
+}
+.mdc-component__toolbar .mdc-icon-toggle::before,
+.mdc-component__toolbar .mdc-icon-toggle::after {
+  background-color: rgba(255, 255, 255, 0.06);
+}
+.mdc-component__toolbar .mdc-fab.mdc--theme-primary.mdc-ripple-upgraded::after {
+  background-color: rgba(255, 255, 255, 0.16);
+}
+.mdc-component__toolbar .mdc-fab.mdc--theme-secondary.mdc-ripple-upgraded::after {
+  background-color: rgba(0, 0, 0, 0.16);
+}
+
+.mat-primary .mat-pseudo-checkbox-checked, .mat-primary .mat-pseudo-checkbox-indeterminate {
+  background: #3f86b5;
+}
+.mat-primary .mat-option.mat-selected:not(.mat-option-disabled) {
+color: #3f86b5;
+}
+
+/*** End Theme from material color export ***/
